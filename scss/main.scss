@@ -1,2 +1,33 @@
 @import "variables";
+@import "functions";
 @import "globals";
+
+%box-shared {
+  border-radius: 0.625rem;
+  border: none;
+  padding: 1.5rem 1.875rem;
+}
+
+.box {
+  &-voilet {
+    @extend %box-shared;
+    background: $moderateVoilet url("../images/bg-pattern-quotation.svg")
+      no-repeat top;
+    color: set-text-color($veryDarkBlakishBlue);
+  }
+  &-gray {
+    @extend %box-shared;
+    background-color: $veryDarkGrayishBlue;
+    color: set-text-color($veryDarkBlakishBlue);
+  }
+  &-white {
+    @extend %box-shared;
+    background-color: $white;
+    color: set-text-color($white);
+  }
+  &-black {
+    @extend %box-shared;
+    background-color: $veryDarkBlakishBlue;
+    color: set-text-color($veryDarkBlakishBlue);
+  }
+}

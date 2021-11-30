@@ -1,0 +1,33 @@
+html {
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: $bodyFontSize;
+  line-height: 1.4;
+  background-color: $lightGrayishBlue;
+}
+
+#container {
+  margin: 4.5rem 1.5rem;
+  display: grid;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

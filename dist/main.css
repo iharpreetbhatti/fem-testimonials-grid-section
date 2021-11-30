@@ -1,1 +1,62 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+html {
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  background-color: #ecf2f8;
+}
+
+#container {
+  margin: 4.5rem 1.5rem;
+  display: -ms-grid;
+  display: grid;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.box-voilet, .box-gray, .box-white, .box-black {
+  border-radius: 0.625rem;
+  border: none;
+  padding: 1.5rem 1.875rem;
+}
+
+.box-voilet {
+  background: #7541c8 url("../images/bg-pattern-quotation.svg") no-repeat top;
+  color: white;
+}
+
+.box-gray {
+  background-color: #48556a;
+  color: white;
+}
+
+.box-white {
+  background-color: white;
+  color: #19212e;
+}
+
+.box-black {
+  background-color: #19212e;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */
