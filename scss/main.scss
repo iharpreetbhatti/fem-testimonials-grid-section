@@ -5,20 +5,21 @@
 %box-shared {
   border-radius: 0.625rem;
   border: none;
-  padding: 1.5rem 1.875rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 20px 20px 40px -10px $lightGray;
 }
 
 .box {
   &-voilet {
     @extend %box-shared;
     background: $moderateVoilet url("../images/bg-pattern-quotation.svg")
-      no-repeat top;
-    color: set-text-color($veryDarkBlakishBlue);
+      no-repeat 90% 0%;
+    color: set-text-color($moderateVoilet);
   }
   &-gray {
     @extend %box-shared;
     background-color: $veryDarkGrayishBlue;
-    color: set-text-color($veryDarkBlakishBlue);
+    color: set-text-color($veryDarkGrayishBlue);
   }
   &-white {
     @extend %box-shared;
@@ -30,4 +31,26 @@
     background-color: $veryDarkBlakishBlue;
     color: set-text-color($veryDarkBlakishBlue);
   }
+}
+
+.user-data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  img {
+    width: 2.5375rem;
+    border-radius: 50%;
+  }
+  .user-info {
+    padding: 0 1rem;
+    h4 {
+      font-size: 1rem;
+    }
+  }
+}
+
+.testimonial-title {
+  font-size: 1.259rem;
+  margin-bottom: 1rem;
 }
