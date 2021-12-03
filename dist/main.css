@@ -13,6 +13,7 @@ html {
 
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
   font-size: 0.8125rem;
   line-height: 1.4;
   background-color: #ecf2f8;
@@ -39,8 +40,8 @@ body {
   border-radius: 0.625rem;
   border: none;
   padding: 1.5rem 2rem;
-  -webkit-box-shadow: 20px 20px 40px -10px #cfcfcf;
-          box-shadow: 20px 20px 40px -10px #cfcfcf;
+  -webkit-box-shadow: 20px 20px 20px -20px #cfcfcf;
+          box-shadow: 20px 20px 20px -20px #cfcfcf;
 }
 
 .box-voilet {
@@ -74,24 +75,37 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.625rem;
 }
 
 .user-data img {
-  width: 2.5375rem;
+  width: 2rem;
   border-radius: 50%;
+  border: 2px solid #cfcfcf;
 }
 
 .user-data .user-info {
   padding: 0 1rem;
 }
 
-.user-data .user-info h4 {
-  font-size: 1rem;
+.user-data .user-info h3 {
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.user-data .user-info span {
+  font-size: 0.72rem;
+  opacity: 50%;
 }
 
 .testimonial-title {
   font-size: 1.259rem;
+  font-weight: 600;
   margin-bottom: 1rem;
+}
+
+.testimonial-text {
+  opacity: 70%;
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=main.css.map */
