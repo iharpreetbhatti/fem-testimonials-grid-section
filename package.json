@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "sass": "sass -w scss/ -o dist/ --recursive"
+    "sass": "sass -w scss/:dist/"
   },
   "author": "Harpreet Singh",
   "license": "ISC"
