@@ -1,0 +1,11 @@
+{
+  "name": "fem-testimonials-grid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass -w scss/ -o dist/ --recursive"
+  },
+  "author": "Harpreet Singh",
+  "license": "ISC"
+}
