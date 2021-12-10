@@ -1,6 +1,6 @@
-@import "variables";
-@import "functions";
-@import "globals";
+@use "variables" as *;
+@use "functions" as *;
+@use "globals";
 
 %box-shared {
   border-radius: 0.625rem;
