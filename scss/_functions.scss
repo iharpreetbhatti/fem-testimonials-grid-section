@@ -1,3 +1,4 @@
+@use "variables" as *;
 // Set Text Color
 @function set-text-color($color) {
   @if (lightness($color) > 52) {

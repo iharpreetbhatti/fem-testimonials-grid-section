@@ -1,6 +1,7 @@
-@import "variables";
-@import "functions";
-@import "globals";
+@use "variables" as *;
+@use "breakpoints" as *;
+@use "functions" as *;
+@use "globals";
 
 %box-shared {
   border-radius: 0.625rem;
@@ -15,6 +16,11 @@
     background: $moderateVoilet url("../images/bg-pattern-quotation.svg")
       no-repeat 90% 0%;
     color: set-text-color($moderateVoilet);
+
+    @include breakpoint-up(large) {
+      grid-column: 1 / span 2;
+      background-position: 80% 0%;
+    }
   }
   &-gray {
     @extend %box-shared;
@@ -25,11 +31,21 @@
     @extend %box-shared;
     background-color: $white;
     color: set-text-color($white);
+    &:last-child {
+      @include breakpoint-up(large) {
+        grid-row: 1 / span 2;
+        grid-column: 4 / span 1;
+      }
+    }
   }
   &-black {
     @extend %box-shared;
     background-color: $veryDarkBlakishBlue;
     color: set-text-color($veryDarkBlakishBlue);
+
+    @include breakpoint-up(large) {
+      grid-column: 2 / span 2;
+    }
   }
 }
 
