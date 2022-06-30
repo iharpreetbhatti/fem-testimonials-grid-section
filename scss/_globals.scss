@@ -1,4 +1,5 @@
 @use "variables" as *;
+@use "breakpoints" as *;
 html {
   font-size: 100%;
 }
@@ -23,6 +24,15 @@ body {
   margin: 4.5rem 1.5rem;
   display: grid;
   gap: 1.5rem;
+
+  @include breakpoint-up(large) {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 80%;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+  }
 }
 
 .attribution {

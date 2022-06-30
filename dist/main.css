@@ -23,6 +23,16 @@ body {
   display: grid;
   gap: 1.5rem;
 }
+@media (min-width: 64em) {
+  #container {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 80%;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+  }
+}
 
 .attribution {
   font-size: 11px;
@@ -45,6 +55,12 @@ body {
   background: #7541c8 url("../images/bg-pattern-quotation.svg") no-repeat 90% 0%;
   color: white;
 }
+@media (min-width: 64em) {
+  .box-voilet {
+    grid-column: 1/span 2;
+    background-position: 80% 0%;
+  }
+}
 .box-gray {
   background-color: #48556a;
   color: white;
@@ -53,9 +69,20 @@ body {
   background-color: white;
   color: #19212e;
 }
+@media (min-width: 64em) {
+  .box-white:last-child {
+    grid-row: 1/span 2;
+    grid-column: 4/span 1;
+  }
+}
 .box-black {
   background-color: #19212e;
   color: white;
+}
+@media (min-width: 64em) {
+  .box-black {
+    grid-column: 2/span 2;
+  }
 }
 
 .user-data {
