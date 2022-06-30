@@ -52,7 +52,7 @@ body {
 }
 
 .box-voilet {
-  background: #7541c8 url("../images/bg-pattern-quotation.svg") no-repeat 90% 0%;
+  background: #7541c8 url("../dist/images/bg-pattern-quotation.svg") no-repeat 90% 0%;
   color: white;
 }
 @media (min-width: 64em) {

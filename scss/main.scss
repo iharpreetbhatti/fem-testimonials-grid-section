@@ -13,7 +13,7 @@
 .box {
   &-voilet {
     @extend %box-shared;
-    background: $moderateVoilet url("../images/bg-pattern-quotation.svg")
+    background: $moderateVoilet url("../dist/images/bg-pattern-quotation.svg")
       no-repeat 90% 0%;
     color: set-text-color($moderateVoilet);
 

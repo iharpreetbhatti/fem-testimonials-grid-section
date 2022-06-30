@@ -16,4 +16,6 @@
 
 .prettierignore
 .vscode
+
 node_modules
+README.md
